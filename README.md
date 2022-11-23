@@ -8,11 +8,11 @@ Le site ne contiendra qu'une seule page contenant :
 
 - un input permettant de rentrer le nom d'une ville, ainsi qu'un bouton pour lancer la recherche
 - le reste de la page est consacrée à l'affichage de la meteo, qui devra contenir
--- le nom de la ville
--- une image representative (ensoleillé, nuageux, etc)
--- les temperature, minimale, maximale, ressenties
--- la vitesse et direction du vent
--- le taux d'humidité
+  - le nom de la ville
+  - une image representative (ensoleillé, nuageux, etc)
+  - les temperature, minimale, maximale, ressenties
+  - la vitesse et direction du vent
+  - le taux d'humidité
 L'api meteo se trouve ici https://openweathermap.org/price (Creer un compte gratuit biensur)
 
 Creer un wireframe avant de commencer a coder
