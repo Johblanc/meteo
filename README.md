@@ -6,22 +6,22 @@ Vous etes chargé de developper une page web responsive permettant de consulter 
 
 Le site ne contiendra qu'une seule page contenant :
 
-. un input permettant de rentrer le nom d'une ville, ainsi qu'un bouton pour lancer la recherche
-. le reste de la page est consacrée à l'affichage de la meteo, qui devra contenir
-.. le nom de la ville
-.. une image representative (ensoleillé, nuageux, etc)
-.. les temperature, minimale, maximale, ressenties
-.. la vitesse et direction du vent
-.. le taux d'humidité
+- un input permettant de rentrer le nom d'une ville, ainsi qu'un bouton pour lancer la recherche
+- le reste de la page est consacrée à l'affichage de la meteo, qui devra contenir
+-- le nom de la ville
+-- une image representative (ensoleillé, nuageux, etc)
+-- les temperature, minimale, maximale, ressenties
+-- la vitesse et direction du vent
+-- le taux d'humidité
 L'api meteo se trouve ici https://openweathermap.org/price (Creer un compte gratuit biensur)
 
 Creer un wireframe avant de commencer a coder
 
 Afin de permettre une évolution ultérieure, le site devra être développé avec le framework css Bootstrap 5.
 
-*** Bonus: auto complétion des villes dans l'input de recherche avec l'api https://geo.api.gouv.fr/ ***
+**Bonus: auto complétion des villes dans l'input de recherche avec l'api https://geo.api.gouv.fr/**
 
-*** Bonus: sur mobile, la recherche peut se faire via la position gps ***
+**Bonus: sur mobile, la recherche peut se faire via la position gps**
 
 ### Modalités pédagogiques
 
