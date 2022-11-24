@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="50mm" height="50mm" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+   <defs>
+      <radialGradient id="g-bg" cx="25" cy="25" fx="25" fy="25" r="25" gradientUnits="userSpaceOnUse" >
+         <stop style="stop-color:#ffffff" offset="0.89" />
+         <stop style="stop-color:#a0a0a0" offset="0.91" />
+         <stop style="stop-color:#a0a0a0" offset="0.95" />
+         <stop style="stop-color:#000000" offset="1" />
+      </radialGradient>
+   </defs>
+   <g >
+      <circle cx="25" cy="25" r="25" style="fill:url(#g-bg)" />
+      <g >
+         <text x="25" y="12.5" style="font-size:12;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#c22">
+            N
+         </text>
+         <text x="25" y="45.5" style="font-size:12;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000">
+            S
+         </text>
+         <text x="43" y="29"   style="font-size:12;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000">
+            E
+         </text>
+         <text x="8"  y="29"   style="font-size:12;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000">
+            O
+         </text>
+      </g>
+   </g>
+</svg>

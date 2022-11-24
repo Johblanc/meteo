@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="50mm" height="50mm" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+   <defs>
+      <linearGradient id="g-spire" x1="25" y1="25" x2="30" y2="25" gradientUnits="userSpaceOnUse" spreadMethod="reflect" >
+         <stop style="stop-color:#7e7e7e" offset="0" />
+         <stop style="stop-color:#000000" offset="1" />
+      </linearGradient>
+      <radialGradient id="g-axe" cx="25" cy="25" fx="25" fy="25" r="3" gradientUnits="userSpaceOnUse" >
+         <stop style="stop-color:#a0a0a0" offset="0.75" />
+         <stop style="stop-color:#545454" offset="1" />
+      </radialGradient>
+   </defs>
+   <g >
+      <path style="fill:url(#g-spire)" d="M 25 4 C 25 4 20 23 20 25 C 20 26.7 22.2 28.4 24 28.9 L 24.3 33.5 C 22.6 35.6 21 45 21 45 C 21 45 22.9 43.1 24.8 43 L 25 46 L 25.2 43 C 27.1 43.1 29 45 29 45 C 29 45 27.4 35.6 25.7 33.5 L 26 28.9 C 27.8 28.4 30 26.7 30 25 C 30 23 25 4 25 4 z M 25 10 L 29 24 C 29 24 28 21 25 21 C 22 21 21 24 21 24 L 25 10 z " />
+      <circle style="fill:url(#g-axe)" cx="25" cy="25" r="3" />
+   </g>
+</svg>
