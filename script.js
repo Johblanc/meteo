@@ -42,6 +42,12 @@ function refreshDisplay(data){
     changeWeatherIcon(data.icon,data.desc)
     changeContentById("humidity", data.humi+"%");
     changeContentById("speed", data.speed+" km/h");
+    orientWind(data.deg)
+}
+
+/**Change la position de la girouette */
+function orientWind(degreesAngle){
+    document.getElementById("direction").style.transform = `rotate(${degreesAngle}deg)`
 }
 
 /**Lancer une requete pour une nouvelle Ville */
