@@ -25,15 +25,23 @@ function changeContentById(id, content){
     document.getElementById(id).textContent = content;
 }
 
+/**Change l'icone correspondant au temps et son texte alternatif */
+function changeWeatherIcon(iconNane, iconeAlt){
+    const icon = document.getElementById("weather");
+    icon.setAttribute("src",`https://openweathermap.org/img/wn/${iconNane}@2x.png`);
+    icon.setAttribute("alt", iconeAlt)
+}
+
 
 /**Permet l'affichage des données récoltées */
 function refreshDisplay(data){
     changeContentById("city-name", data.name);
-    changeContentById("temp-feel", data.feel);
-    changeContentById("temp-max", data.max);
-    changeContentById("temp-min", data.min);
-    changeContentById("humidity", data.humi);
-    changeContentById("speed", data.speed);
+    changeContentById("temp-feel", data.feel+"°");
+    changeContentById("temp-max", data.max+"°");
+    changeContentById("temp-min", data.min+"°");
+    changeWeatherIcon(data.icon,data.desc)
+    changeContentById("humidity", data.humi+"%");
+    changeContentById("speed", data.speed+" km/h");
 }
 
 /**Lancer une requete pour une nouvelle Ville */
