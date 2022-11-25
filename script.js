@@ -5,6 +5,7 @@ function convertToJson(request){
     return request.json();
 }
 
+/**Converti la requete en Objet contenant les données que l'on souhaite conserver */
 function convertToObject(jsonRequest){
     return {
         name: jsonRequest.name,
@@ -19,6 +20,11 @@ function convertToObject(jsonRequest){
     }
 }
 
+/**Change le contenu d'une balise identifiée */
+function changeContentById(id, content){
+    document.getElementById(id).textContent = content;
+}
+
 
 /**Lancer une requete pour une nouvelle Ville */
 function newCity(cityName){
@@ -26,6 +32,7 @@ function newCity(cityName){
     .then(result =>convertToJson(result))
     .then(result => {
         let data = convertToObject(result);
+        console.log(data);
     })
 }
 
