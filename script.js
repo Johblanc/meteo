@@ -57,4 +57,9 @@ function newCity(cityName){
     .then(result => refreshDisplay(convertToObject(result)))
 }
 
-newCity("Toulouse")
+/**Lecture de l'event de validation du Form */
+document.getElementById("form").addEventListener("submit",event => {
+    event.preventDefault();
+    newCity(document.getElementById("city-selector").value);
+    }
+)
