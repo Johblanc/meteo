@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./images/favicon.ico">
-    <script defer src="script.js" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="script.js"></script>
     <title>Météo</title>
 </head>
-<body>
-    <header class="">
-        <h1 class="">Météo en France</h1>
+
+<body class="bg-info">
+    <header class="bg-primary m-2 rounded-3 text-center">
+        <h1 class="p-1">Météo en France</h1>
     </header>
-    <form class="">
-        <label for="city-selector" class="">Quel temps fait-il à</label>
-        <input type="text" id="city-selector">
-        <input type="submit" value="?" class="">
+    <form id="form" class="bg-primary rounded-3 d-sm-flex justify-content-center m-2">
+        <div class="justify-content-center">
+            <label for="city-selector" class="text-center w-100">Quel temps fait-il à</label>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <input type="text" id="city-selector" class="rounded-3 m-1">
+            <input type="submit" value="?" class="rounded-3 m-1">
+        </div>
     </form>
-    <section class="">
-        <div class="">
-            <h2 id="city-name" class=""></h2>
+    <section class="bg-light rounded-3 p-2 m-2">
+        <div class="bg-info rounded-3 text-center">
+            <h2 id="city-name"></h2>
         </div>
-        <div class="">
-            <div class="">
-                <div class="">
-                    <img src="./images/thermhalf.svg" alt="Icone température ressentie" class=""/>
-                    <p id="temp-feel" class=""></p>
-                </div>
-                <div class="">
-                    <div class="">
-                        <img src="./images/thermhigh.svg" alt="Icone température maximale" class=""/>
-                        <p id="temp-max" class=""></p>
+        <div class="container p-0">
+            <div class="row justify-content-betweenbg-info rounded-3 ">
+                <div class="col-8">
+                    <div class="bg-info rounded-3 p-2 mb-2">          <!--THERMO-->
+                        <div class="bg-light rounded-3 d-flex p-2 mb-2">
+                            <div class="w-25 me-4">
+                                <img src="./images/thermhalf.svg" alt="Icone température ressentie" class="h-100" />
+                            </div>
+                            <p id="temp-feel" class="fs-1 mt-2">25</p>
+                        </div>
+                        <div class="d-flex h-25">
+                            <div class="bg-light rounded-3 w-50 d-flex p-2 me-2">
+                                <div class="w-25 me-4">
+                                    <img src="./images/thermhigh.svg" alt="Icone température maximale" class="h-100" />
+                                </div>
+                                <p id="temp-max" class="fs-4 pt-2">25</p>
+                            </div>
+                            <div class="bg-light rounded-3 w-50 d-flex p-2">
+                                <div class="w-25 me-4">
+                                    <img src="./images/thermlow.svg" alt="Icone température minimale" class="h-100" />
+                                </div>
+                                <p id="temp-min" class="fs-4 pt-2">25</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="">
-                        <img src="./images/thermlow.svg" alt="Icone température minimale" class=""/>
-                        <p id="temp-min" class=""></p>
-                    </div>
-                </div>
-            </div>
-            <div class="">
-                <img src="" alt="" id="weather" class=""/>
-            </div>
-            <div class="">
-                <div class="">
-                    <img src="./images/humid.svg" alt="Icone Humidité" class=""/>
-                    <p id="humidity" class=""></p>
-                </div>
-            </div>
+                    <div class="bg-primary rounded-3 p-2 mb-2">          <!--HUMIDITY-->
+                        <div class="bg-light rounded-3 p-2 w-100 d-flex">
+                            <div class="w-25 me-4">
+                                <img src="./images/humid.svg" alt="Icone Humidité" class="h-100" />
+                            </div>
+                            <p id="humidity" class="fs-2"></p>
+                        </div>
+                    </div>          
+                </div>        
+                <div class="col justify-content-center">        <!--ICONE-->
+                    <img src="" alt="" id="weather" class="bg-primary w-75 rounded-3 " />
+                </div> 
+            </div> 
         </div>
-        <div class="">
-            <img src="./images/wind.svg" alt="Icone du vent" class=""/>
-            <p id="speed" class=""></p>
-            <img src="./images/bousole_bg.svg" alt="Bousole" class=""/>
-            <img src="./images/bousole_spire.svg" alt="Pointe" id="direction" class=""/>
+        <div class="bg-info d-flex rounded-3 p-2">
+            <img src="./images/wind.svg" alt="Icone du vent" class="w-25" />
+            <p id="speed" class="w-50 fs-1 pt-2 ms-4"></p>
+            <div class="position-relative h-25 w-25">
+                <img src="./images/bousole_bg.svg" alt="Bousole" class="position-absolute w-100 p-2" />
+                <img src="./images/bousole_spire.svg" alt="Pointe" id="direction" class="position-absolute  w-100 p-2" />
+            </div>
         </div>
     </section>
 </body>
+
 </html>
