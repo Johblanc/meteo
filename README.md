@@ -1,5 +1,12 @@
 # meteo
 
+## Liens
+vers le Github
+https://github.com/Johblanc/meteo
+
+vers le deploiment
+https://johblanc.github.io/meteo/
+
 ## Brief
 ### Contexte du projet
 Vous etes chargé de developper une page web responsive permettant de consulter la meteo du jour.
